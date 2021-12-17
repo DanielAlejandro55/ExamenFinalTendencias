@@ -1,0 +1,23 @@
+  Widget _imageBanner() {
+    return Container(
+      margin: EdgeInsets.only(
+          top: MediaQuery.of(context).size.height * 0.12,
+          bottom: MediaQuery.of(context).size.height * 0.15),
+      child: Image.asset(
+        'assets/img/delivery.png',
+        height: 200,
+        width: 200,
+      ),
+    );
+  }
+
+
+
+//Rutas
+app.get('/', (req, res) => {
+    res.send('Ruta raiz del backend');
+});
+
+app.get('/una', (req, res) => {
+    res.send('Ruta una del backend');
+});
